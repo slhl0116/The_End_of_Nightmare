@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+    <head>
+        <title>The End of Nightmare</title>
+        <meta charset="utf-8">
+        <script src='../js/jquery-3.5.1.js'></script>
+        <script src='../js/jquery-ui-1.10.3.custom.min.js'></script>
+        <script src='../js/jquery-1.10.2.min.js'></script>
+        <script src='../js/index.js'></script>
+        <link rel="shortcut icon" href="./teon.ico">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                color:white;
+            }
+            .mainmenu{
+                position:relative;
+            }
+            .nav{ position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,40%);
+            }
+            .menu>li{
+                list-style-type: none;
+                float:left;
+                font-size:25px;
+                width:200px;
+                height:60px;
+                background:white;
+                opacity:0.2;
+                text-align: center;
+                line-height: 60px;
+            }
+            .main{
+                width:100%;
+                height:1400px;
+                background-attachment: fixed;
+            }
+            .mp3{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,0%);
+                text-align: center;
+                line-height:30px;
+            }
+            audio{
+                width:300px;
+                height:40px;
+                opacity:0.3;
+            }
+            b{
+                position:absolute;
+                left:50%;
+                top:5%;
+                transform: translate(-50%,-50%);
+                font-size:40px;
+                font-family:Monotype Corsiva;
+            }
+            .song{
+                font-size:30px;
+            }
+            #mv{
+                position:absolute;
+                top:10%;
+                left:50%;
+                transform: translate(-50%,0%);
+                display:none;
+            }
+
+            #teon{
+                background-image: url('./teonblur.jpg');
+                background-size: cover;
+            }
+            #teonalbum{
+                width:300px;
+                height:300px;
+                background-image: url('./teon.png');
+                background-repeat:no-repeat;
+                background-size:cover;
+                position:absolute;
+                top:40%;
+                left:50%;
+                transform: translate(-50%,-90%);
+            }
+            .mp3{
+                font-family:Monotype Corsiva;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='teon' class='main'>
+            <div id='tracklist' class='tabs-panel'>
+                <b>The End of Nightmare</b>
+                <div id='teonalbum' class='albumimg'></div>
+                <div class='mp3'>
+                    <p class='song'>1. Intro</p><br>
+                    <audio id="audio" src="./y2mate.com - Introteon.mp3" controls></audio><br><br>
+                    <p class='song'>2. PIRI *title</p><br>
+                    <audio id="audio" src="./y2mate.com - PIRI Inst.mp3" controls></audio><br><br>
+                    <p class='song'>3. Diamond</p><br>
+                    <audio id="audio" src="./y2mate.com - Daydream 백일몽.mp3" controls></audio><br><br>
+                    <p class='song'>4. And there was no one left</p><br>
+                    <audio id="audio" src="./y2mate.com - 그리고 아무도 없었다 And there was no one left.mp3" controls></audio><br><br>
+                    <p class='song'>5. Daydream</p><br>
+                    <audio id="audio" src="./y2mate.com - Daydream 백일몽.mp3" controls></audio><br><br>
+                    <p class='song'>6. PIRI (Inst.)</p><br>
+                    <audio id="audio" src="./y2mate.com - PIRI Inst.mp3" controls></audio><br><br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
